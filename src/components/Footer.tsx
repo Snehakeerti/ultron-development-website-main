@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import ultronLogo from "@/assets/round-logo-bg-remove.png";
+
 
 const Footer = () => {
   return (
@@ -9,10 +11,17 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">IT</span>
-              </div>
-              <span className="text-xl font-bold">TechCore</span>
+
+              <img
+                src={ultronLogo}
+                alt="best computer service center in coimbatore"
+                className="w-10 h-10 object-contain"
+              />
+
+              <span className="text-xl font-bold">
+                Ultron Computers
+              </span>
+
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
               Ultron Computers is a reputed and trusted service provider for computer and laptop repair

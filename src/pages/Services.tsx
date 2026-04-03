@@ -3,52 +3,94 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Server, Network, Shield, Monitor, Code, Lightbulb, ArrowRight, CheckCircle } from "lucide-react";
+import { Server, Network, Shield, Monitor, Cpu, Wrench, ArrowRight, CheckCircle } from "lucide-react";
 
 const services = [
   {
+    icon: Monitor,
+    title: "Computer & Laptop Repair",
+    desc: "Comprehensive repair solutions for all major brands — Dell, HP, Lenovo, Acer, Asus, Toshiba, and Apple. From chip-level diagnostics to full hardware restoration for both desktops and laptops.",
+    features: [
+      "Diagnostic Assessment & Troubleshooting",
+      "Motherboard & Hardware Repairs",
+      "Screen & Hinge Replacements",
+      "Power Jack & Connector Repairs",
+      "Overheating & Cooling Solutions",
+      "Data Recovery & Backup",
+    ],
+  },
+  {
     icon: Server,
-    title: "IT Infrastructure Solutions",
-    desc: "Complete end-to-end IT infrastructure design, deployment, and management tailored for your business scale.",
-    features: ["Server Setup & Configuration", "Virtualization Solutions", "Storage Area Networks", "Infrastructure Monitoring"],
+    title: "AMC & Server Maintenance",
+    desc: "Annual Maintenance Contracts designed for businesses that demand zero downtime. SLA-driven corporate support with dedicated technicians and priority response for all your systems and servers.",
+    features: [
+      "Preventive Maintenance Schedules",
+      "On-call & Priority Support",
+      "System & Server Health Checks",
+      "SLA-Driven Corporate Support",
+      "Performance Reporting",
+      "Hardware Lifecycle Management",
+    ],
   },
   {
     icon: Network,
-    title: "Networking Services",
-    desc: "Enterprise-grade networking solutions ensuring seamless connectivity and maximum uptime across your organization.",
-    features: ["LAN/WAN Design", "VPN & Security", "Wireless Solutions", "Network Monitoring"],
+    title: "Multi-Brand System Sales",
+    desc: "Supplying businesses with the right hardware — from workstations and servers to network security devices. We source, configure, and deploy systems tailored to your operational needs.",
+    features: [
+      "Workstations & Servers",
+      "Branded & Assembled Desktops",
+      "Multi-Brand Laptops",
+      "NAS Box Storage Solutions",
+      "Firewall & Network Security Devices",
+      "Peripheral Devices & Accessories",
+    ],
+  },
+  {
+    icon: Cpu,
+    title: "Genuine Spare Parts",
+    desc: "We supply authentic, quality-tested spare parts for all major laptop and computer brands. Every component comes with warranty support, ensuring your device performs reliably after every repair.",
+    features: [
+      "Laptop Screens & Displays",
+      "Batteries & Chargers",
+      "Hard Drives & SSDs",
+      "Keyboards & Touchpads",
+      "Motherboards & Chipsets",
+      "Cooling Fans & Thermal Solutions",
+    ],
   },
   {
     icon: Shield,
-    title: "AMC Support",
-    desc: "Comprehensive annual maintenance contracts that keep your IT systems running without interruption.",
-    features: ["24/7 Support", "Preventive Maintenance", "Hardware Replacement", "Performance Reports"],
+    title: "Virus Removal & Security",
+    desc: "Protect your business and personal data from malware, ransomware, and unauthorized access. Our security services ensure your systems are clean, fortified, and fully operational.",
+    features: [
+      "Malware & Virus Removal",
+      "Firewall Setup & Configuration",
+      "OS Reinstallation & Restoration",
+      "Data Protection & Encryption",
+      "Network Security Audits",
+      "Unauthorized Access Prevention",
+    ],
   },
   {
-    icon: Monitor,
-    title: "Hardware Solutions",
-    desc: "Premium hardware procurement, installation, and lifecycle management from leading manufacturers.",
-    features: ["Server Hardware", "Networking Equipment", "Workstations", "Peripheral Devices"],
-  },
-  {
-    icon: Code,
-    title: "Software Solutions",
-    desc: "Custom software deployment, licensing management, and seamless integration services.",
-    features: ["License Management", "Software Deployment", "System Integration", "Custom Development"],
-  },
-  {
-    icon: Lightbulb,
-    title: "IT Consulting",
-    desc: "Strategic technology consulting to help you make informed decisions and align IT with business goals.",
-    features: ["IT Strategy", "Digital Transformation", "Technology Audits", "Cost Optimization"],
+    icon: Wrench,
+    title: "Performance & Optimization",
+    desc: "Keep your computers running like new with our professional maintenance and tuning services. Ideal for both individual users and corporate fleets needing consistent peak performance.",
+    features: [
+      "Dust Removal & Hardware Cleaning",
+      "Thermal Paste Application",
+      "Software Updates & Optimization",
+      "System Tune-up & Speed Boost",
+      "Preventive Maintenance Plans",
+      "Free Initial Inspection",
+    ],
   },
 ];
 
 const process = [
-  { step: "01", title: "Consultation", desc: "We understand your needs and challenges." },
-  { step: "02", title: "Planning", desc: "We design a tailored solution architecture." },
-  { step: "03", title: "Execution", desc: "We deploy with precision and minimal disruption." },
-  { step: "04", title: "Support", desc: "We provide ongoing maintenance and optimization." },
+  { step: "01", title: "Tell Us the Issue", desc: "Share your problem — our experts listen and suggest the best solution for your device." },
+  { step: "02", title: "Get a Quote", desc: "We identify the issue and provide a transparent, no-surprise repair cost estimate." },
+  { step: "03", title: "Book an Appointment", desc: "Visit us at Gandhipuram or schedule a pickup. We inspect and give an estimated delivery time." },
+  { step: "04", title: "Get It Resolved", desc: "Once fixed, you're notified immediately. We deliver on time — every time." },
 ];
 
 const Services = () => {
@@ -65,10 +107,10 @@ const Services = () => {
             <AnimatedSection>
               <span className="text-accent font-semibold text-sm tracking-wider uppercase">Our Services</span>
               <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mt-2 mb-4">
-                Comprehensive IT Solutions
+                Repair. Maintain. Upgrade.
               </h1>
               <p className="text-primary-foreground/60 max-w-2xl mx-auto">
-                From infrastructure to consulting, we deliver end-to-end IT services for modern enterprises.
+                From same-day laptop repairs to long-term AMC contracts — Ultron Computers is Coimbatore's most trusted partner for all things IT. Quality work, genuine parts, and a No Fix, No Fee promise.
               </p>
             </AnimatedSection>
           </div>
@@ -79,7 +121,7 @@ const Services = () => {
           <div className="container-custom space-y-12">
             {services.map((service, i) => (
               <AnimatedSection key={i}>
-                <div className={`glass-card p-8 md:p-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
+                <div className="glass-card p-8 md:p-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                   <div className="lg:col-span-2">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
@@ -114,6 +156,9 @@ const Services = () => {
             <AnimatedSection className="text-center mb-14">
               <span className="text-accent font-semibold text-sm tracking-wider uppercase">Our Process</span>
               <h2 className="text-3xl font-bold text-primary-foreground mt-2">How We Work</h2>
+              <p className="text-primary-foreground/50 max-w-xl mx-auto mt-3 text-sm">
+                A simple, transparent 4-step process — so you always know what's happening with your device.
+              </p>
             </AnimatedSection>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {process.map((p, i) => (
@@ -132,10 +177,12 @@ const Services = () => {
         {/* CTA */}
         <section className="section-padding bg-background">
           <AnimatedSection className="container-custom text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Need a Custom Solution?</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Let's discuss your specific requirements and build the perfect IT solution for your business.</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Not Sure What You Need?</h2>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+              Walk in or call us — our technicians offer a free inspection and honest advice with no obligations.
+            </p>
             <Link to="/contact">
-              <Button variant="accent" size="lg">Request Consultation</Button>
+              <Button variant="accent" size="lg">Book a Free Inspection</Button>
             </Link>
           </AnimatedSection>
         </section>

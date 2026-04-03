@@ -11,6 +11,7 @@ import Services from "./pages/Services";
 import Spares from "./pages/Spares";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ThankYou from "@/pages/ThankYou";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,8 @@ const App = () => (
           <Route path="/spares" element={<Spares />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

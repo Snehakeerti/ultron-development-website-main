@@ -28,15 +28,12 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
- 
+
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md border-b border-border/50"
-          : "bg-transparent"
-        }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-border/50"
     >
       <div className="container-custom flex items-center justify-between h-20 px-4 md:px-8">
         {/* Logo */}
@@ -54,8 +51,8 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-medium transition-colors relative group ${scrolled ? "text-foreground/70 hover:text-foreground" : "text-primary-foreground/80 hover:text-primary-foreground"
-                } ${location.pathname === link.path ? (scrolled ? "text-foreground" : "text-primary-foreground") : ""}`}
+              className={`text-sm font-medium transition-colors relative group text-black/70 hover:text-black ${location.pathname === link.path ? "text-black" : ""
+                }`}
             >
               {link.label}
               <span
@@ -96,8 +93,8 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   className={`block text-base font-medium py-2 transition-colors ${location.pathname === link.path
-                      ? "text-accent"
-                      : "text-foreground/70 hover:text-foreground"
+                    ? "text-accent"
+                    : "text-foreground/70 hover:text-foreground"
                     }`}
                 >
                   {link.label}

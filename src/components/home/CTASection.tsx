@@ -10,15 +10,16 @@ const CTASection = () => {
         <div className="relative rounded-2xl overflow-hidden p-12 md:p-16 text-center" style={{ background: "var(--gradient-hero)" }}>
           <div className="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[80px]" />
           <div className="relative z-10">
+
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Let's Build Your IT Infrastructure Together
+              Your Trusted Laptop & Computer Repair Center in Coimbatore
             </h2>
             <p className="text-primary-foreground/60 max-w-xl mx-auto mb-8">
-              Ready to transform your business with cutting-edge technology? Get in touch with our experts today.
+            Quality repairs, genuine spares, and on-time delivery — backed by 30-day warranty and 94,000+ happy clients.
             </p>
             <Link to="/contact">
               <Button variant="hero" size="lg" className="gap-2">
-                Start Your Project <ArrowRight size={18} />
+                Get Free Estimate <ArrowRight size={18} />
               </Button>
             </Link>
           </div>

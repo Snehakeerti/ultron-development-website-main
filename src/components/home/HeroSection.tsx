@@ -37,8 +37,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6"
           >
-            Smart IT Solutions for{" "}
-            <span className="gradient-text">Modern Businesses</span>
+            Laptop Service Center{" "}
+            <span className="gradient-text">in Coimbatore</span>
           </motion.h1>
 
           <motion.p
@@ -47,7 +47,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-primary-foreground/70 mb-8 max-w-2xl leading-relaxed"
           >
-            We deliver comprehensive IT infrastructure, networking, and support services that drive growth and innovation for enterprises of all sizes.
+            Your One-stop destination for all your Laptop repair and replacement needs. An authorized Laptop service center in Coimbatore.
           </motion.p>
 
           <motion.div

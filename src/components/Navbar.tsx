@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "@/assets/ultron-logo.png";
+
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -26,26 +28,24 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
-
+ 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-background/95 backdrop-blur-md shadow-md border-b border-border/50"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container-custom flex items-center justify-between h-20 px-4 md:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-            <span className="text-accent-foreground font-bold text-lg">IT</span>
-          </div>
-          <span className={`text-xl font-bold ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-            TechCore
-          </span>
+          <img
+            src={Logo}
+            alt="Ultron Computers"
+            className="h-10 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -54,15 +54,13 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-medium transition-colors relative group ${
-                scrolled ? "text-foreground/70 hover:text-foreground" : "text-primary-foreground/80 hover:text-primary-foreground"
-              } ${location.pathname === link.path ? (scrolled ? "text-foreground" : "text-primary-foreground") : ""}`}
+              className={`text-sm font-medium transition-colors relative group ${scrolled ? "text-foreground/70 hover:text-foreground" : "text-primary-foreground/80 hover:text-primary-foreground"
+                } ${location.pathname === link.path ? (scrolled ? "text-foreground" : "text-primary-foreground") : ""}`}
             >
               {link.label}
               <span
-                className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
-                  location.pathname === link.path ? "w-full" : "w-0 group-hover:w-full"
-                }`}
+                className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${location.pathname === link.path ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
               />
             </Link>
           ))}
@@ -97,11 +95,10 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block text-base font-medium py-2 transition-colors ${
-                    location.pathname === link.path
+                  className={`block text-base font-medium py-2 transition-colors ${location.pathname === link.path
                       ? "text-accent"
                       : "text-foreground/70 hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>

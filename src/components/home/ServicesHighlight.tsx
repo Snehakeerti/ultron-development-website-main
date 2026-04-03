@@ -3,12 +3,12 @@ import { Server, Network, Shield, Monitor, Code, Lightbulb } from "lucide-react"
 import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
-  { icon: Server, title: "IT Infrastructure Solutions", desc: "End-to-end infrastructure design, deployment, and management for scalable operations." },
-  { icon: Network, title: "Networking Services", desc: "Enterprise networking solutions including LAN, WAN, VPN, and wireless infrastructure." },
-  { icon: Shield, title: "AMC Support", desc: "Annual maintenance contracts ensuring uninterrupted business operations year-round." },
-  { icon: Monitor, title: "Hardware Solutions", desc: "Premium hardware procurement, installation, and lifecycle management services." },
-  { icon: Code, title: "Software Solutions", desc: "Custom software deployment, licensing, and integration for business efficiency." },
-  { icon: Lightbulb, title: "IT Consulting", desc: "Strategic technology consulting to align your IT with business objectives." },
+  { icon: Server, title: "Computer & Laptop Repair Services", desc: "Professional repair solutions for desktops and laptops of all major brands. We provide complete diagnostics, chip-level repair, screen replacement, motherboard repair, OS installation, virus removal, overheating fixes, and performance optimization to restore your system efficiently." },
+  { icon: Network, title: "Multi Brand System Sales", desc: "Sales of branded and assembled computers, laptops, and servers. We provide workstations, desktops, multi-brand laptops, NAS storage solutions, and firewall security devices suitable for personal, business, and enterprise needs." },
+  { icon: Shield, title: "AMC for Systems & Server Maintenance", desc: "Reliable Annual Maintenance Contracts for smooth business operations. Includes preventive maintenance, on-call support, system health checks, and SLA-based service to ensure uninterrupted system performance." },
+  { icon: Monitor, title: "Spare Parts & Accessories", desc: "Genuine spare parts for laptops and desktops with warranty support. We supply laptop screens, batteries, chargers, keyboards, touchpads, SSD, hard drives, motherboards, cooling fans, cables, adapters, and other accessories." },
+  { icon: Code, title: "Preventive Maintenance & Optimization", desc: "Improve system speed and lifespan with professional maintenance services. Includes internal cleaning, thermal paste replacement, software updates, system tuning, and performance improvement for better efficiency." },
+  { icon: Lightbulb, title: "IT Support & Technical Consulting", desc: "Expert technical support to solve IT challenges quickly. We provide professional guidance, troubleshooting assistance, system upgrade recommendations, and reliable customer support for both individuals and businesses." },
 ];
 
 const ServicesHighlight = () => {

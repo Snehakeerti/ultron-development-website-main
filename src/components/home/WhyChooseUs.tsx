@@ -1,11 +1,15 @@
-import { Users, Zap, DollarSign, Award } from "lucide-react";
-import AnimatedSection from "@/components/AnimatedSection";
+import { Users, Handshake, Coins, ThumbsUp, MessageCircleHeart, CircleDollarSign, Hourglass, Ribbon } from "lucide-react";
+import AnimatedSection from "../AnimatedSection";
 
 const benefits = [
   { icon: Users, title: "Experienced Team", desc: "Certified engineers with 14+ years of industry expertise." },
-  { icon: Zap, title: "Fast Support", desc: "Rapid response times with 24/7 priority support available." },
-  { icon: DollarSign, title: "Affordable Solutions", desc: "Enterprise-grade quality at competitive, transparent pricing." },
-  { icon: Award, title: "Enterprise Quality", desc: "ISO-certified processes delivering consistent, reliable results." },
+  { icon: Handshake, title: "Customer Friendly", desc: "Rapid response times with 24/7 priority support available." },
+  { icon: Coins, title: "No Fix, No Fee", desc: "Enterprise-grade quality at competitive, transparent pricing." },
+  { icon: ThumbsUp, title: "Well-Reputed", desc: "ISO-certified processes delivering consistent, reliable results." },
+  { icon: MessageCircleHeart, title: "Free Inspection", desc: "ISO-certified processes delivering consistent, reliable results." },
+  { icon: CircleDollarSign, title: "Cost-Effectivey", desc: "ISO-certified processes delivering consistent, reliable results." },
+  { icon: Hourglass, title: "On-Time Delivery", desc: "ISO-certified processes delivering consistent, reliable results." },
+  { icon: Ribbon, title: "30 Days Warranty", desc: "ISO-certified processes delivering consistent, reliable results." },
 ];
 
 const WhyChooseUs = () => {
@@ -24,7 +28,7 @@ const WhyChooseUs = () => {
             <AnimatedSection key={i} delay={i * 0.1}>
               <div className="text-center p-6">
                 <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                  <b.icon size={28} className="text-accent" />
+                  <b.icon size={34} className="text-accent" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{b.title}</h3>
                 <p className="text-muted-foreground text-sm">{b.desc}</p>

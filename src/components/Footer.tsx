@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-navy text-primary-foreground">
       <div className="container-custom section-padding pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -15,7 +15,8 @@ const Footer = () => {
               <span className="text-xl font-bold">TechCore</span>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
-              Delivering enterprise-grade IT solutions that empower businesses to thrive in the digital age. Your trusted technology partner since 2010.
+              Ultron Computers is a reputed and trusted service provider for computer and laptop repair
+              solutions in Gandhipuram, Coimbatore.
             </p>
             <div className="flex gap-3">
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
@@ -48,42 +49,22 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Services</h4>
-            <ul className="space-y-3">
-              {[
-                "IT Infrastructure",
-                "Networking Services",
-                "AMC Support",
-                "Hardware Solutions",
-                "Software Solutions",
-                "IT Consulting",
-              ].map((item) => (
-                <li key={item}>
-                  <Link to="/services" className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-accent mt-0.5 shrink-0" />
-                <span className="text-primary-foreground/60 text-sm">123 Business Park, Tech District, City 10001</span>
+                <span className="text-primary-foreground/60 text-sm">
+                  195, Dr Subbarayan St, Sivananda Colony, Tatabad, Gandhipuram, Coimbatore, Tamil Nadu 641012 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-accent shrink-0" />
-                <span className="text-primary-foreground/60 text-sm">+1 (555) 123-4567</span>
+                <span className="text-primary-foreground/60 text-sm">+91 9715097774</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-accent shrink-0" />
-                <span className="text-primary-foreground/60 text-sm">info@techcore.com</span>
+                <span className="text-primary-foreground/60 text-sm">sale@ultroncomputer.com</span>
               </li>
             </ul>
           </div>
@@ -91,12 +72,12 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/40 text-sm">
-            © 2024 TechCore Solutions. All rights reserved.
+            © 2026 Ultron Computer. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          {/* <div className="flex gap-6">
             <a href="#" className="text-primary-foreground/40 hover:text-primary-foreground/70 text-sm transition-colors">Privacy Policy</a>
             <a href="#" className="text-primary-foreground/40 hover:text-primary-foreground/70 text-sm transition-colors">Terms of Service</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

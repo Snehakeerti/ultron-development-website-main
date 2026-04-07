@@ -132,7 +132,7 @@ const Services = () => {
                     <p className="text-muted-foreground leading-relaxed mb-6">{service.desc}</p>
                     <Link to="/contact">
                       <Button variant="accent" size="sm" className="gap-2">
-                        Get Started <ArrowRight size={16} />
+                        Enquire Now <ArrowRight size={16} />
                       </Button>
                     </Link>
                   </div>

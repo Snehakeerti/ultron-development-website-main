@@ -110,11 +110,11 @@ const Contact = () => {
               Contact Us
             </span>
 
-            <h1 className="text-4xl font-bold mt-2">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mt-2 mb-4">
               Let's Fix It Together
             </h1>
 
-            <p className="opacity-70 mt-3">
+            <p className="text-primary-foreground/60 max-w-2xl mx-auto">
               Fill the form and our technician will contact you.
             </p>
           </AnimatedSection>
@@ -249,7 +249,7 @@ const Contact = () => {
 
                 <div className="flex gap-3">
                   <MapPin />
-                  Coimbatore
+                  195, Dr Subbarayan St, Sivananda Colony, Tatabad, Gandhipuram, Coimbatore, Tamil Nadu 641012
                 </div>
 
 

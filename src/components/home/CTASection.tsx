@@ -1,9 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
+import ConsultationModal from "../ConsultationModal";
+
+
+const serviceOptions = [
+  "Laptop Repair",
+  "Desktop Repair",
+  "Motherboard Repair",
+  "Data Recovery",
+  "Chip Level Service",
+  "Others"
+];
 
 const CTASection = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="section-padding bg-background">
       <AnimatedSection className="container-custom">
@@ -15,13 +29,23 @@ const CTASection = () => {
               Your Trusted Laptop & Computer Repair Center in Coimbatore
             </h2>
             <p className="text-primary-foreground/60 max-w-xl mx-auto mb-8">
-            Quality repairs, genuine spares, and on-time delivery — backed by 30-day warranty and 94,000+ happy clients.
+              Quality repairs, genuine spares, and on-time delivery — backed by 30-day warranty and 10,000+ happy clients.
             </p>
-            <Link to="/contact">
-              <Button variant="hero" size="lg" className="gap-2">
-                Get Free Estimate <ArrowRight size={18} />
-              </Button>
-            </Link>
+            <Button
+              variant="hero"
+              size="lg"
+              className="gap-2"
+              onClick={() => setOpen(true)}
+            >
+              Get Free Estimate
+              <ArrowRight size={18} />
+            </Button>
+
+            <ConsultationModal
+              open={open}
+              setOpen={setOpen}
+              serviceOptions={serviceOptions}
+            />
           </div>
         </div>
       </AnimatedSection>

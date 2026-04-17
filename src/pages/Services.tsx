@@ -1,9 +1,20 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Server, Network, Shield, Monitor, Cpu, Wrench, ArrowRight, CheckCircle } from "lucide-react";
+import ConsultationModal from "../components/ConsultationModal";
+
+const serviceOptions = [
+  "Laptop Repair",
+  "Desktop Repair",
+  "Motherboard Repair",
+  "Data Recovery",
+  "Chip Level Service",
+  "Others"
+];
 
 const services = [
   {
@@ -17,6 +28,19 @@ const services = [
       "Power Jack & Connector Repairs",
       "Overheating & Cooling Solutions",
       "Data Recovery & Backup",
+    ],
+  },
+  {
+    icon: Monitor,
+    title: "Used Laptop Sales",
+    desc: "High-quality refurbished laptops from trusted brands with upgraded specifications. Each device undergoes strict quality testing to ensure reliable performance at a budget-friendly price.",
+    features: [
+      "50+ Quality Check Process",
+      "Upgraded RAM & SSD Options",
+      "Cost Saving Compared to New Laptop",
+      "100% Genuine & Tested Product",
+      "1 Year Warranty Support",
+      "Anytime Service Assistance",
     ],
   },
   {
@@ -94,6 +118,8 @@ const process = [
 ];
 
 const Services = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -130,11 +156,21 @@ const Services = () => {
                       <h2 className="text-2xl font-bold text-foreground">{service.title}</h2>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">{service.desc}</p>
-                    <Link to="/contact">
-                      <Button variant="accent" size="sm" className="gap-2">
-                        Enquire Now <ArrowRight size={16} />
-                      </Button>
-                    </Link>
+                    <Button
+                      variant="hero"
+                      size="lg"
+                      className="gap-2"
+                      onClick={() => setOpen(true)}
+                    >
+                      Enquire Now
+                      <ArrowRight size={16} />
+                    </Button>
+
+                    <ConsultationModal
+                      open={open}
+                      setOpen={setOpen}
+                      serviceOptions={serviceOptions}
+                    />
                   </div>
                   <div className="space-y-3">
                     {service.features.map((f, j) => (

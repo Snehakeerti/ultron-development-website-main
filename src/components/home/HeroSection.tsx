@@ -1,13 +1,26 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Monitor, Users, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import ConsultationModal from "../ConsultationModal";
+
+const serviceOptions = [
+  "Laptop Repair",
+  "Desktop Repair",
+  "Motherboard Repair",
+  "Data Recovery",
+  "Chip Level Service",
+  "Others"
+];
 
 const HeroSection = () => {
+  const [open, setOpen] = useState(false);
+
   const stats = [
-    { icon: Monitor, value: "500+", label: "Projects Completed" },
-    { icon: Users, value: "200+", label: "Happy Clients" },
+    { icon: Monitor, value: "2000+", label: "Projects Completed" },
+    { icon: Users, value: "10000+", label: "Happy Clients" },
     { icon: Award, value: "14+", label: "Years Experience" },
   ];
 
@@ -27,7 +40,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-accent/20 text-accent border border-accent/30 mb-6">
-              Enterprise IT Solutions
+              No.1 Chip Level Service Center
             </span>
           </motion.div>
 
@@ -56,11 +69,23 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
-            <Link to="/contact">
-              <Button variant="hero" size="lg" className="gap-2">
-                Get Consultation <ArrowRight size={18} />
-              </Button>
-            </Link>
+
+            <Button
+              variant="hero"
+              size="lg"
+              className="gap-2"
+              onClick={() => setOpen(true)}
+            >
+              Get Consultation
+              <ArrowRight size={18} />
+            </Button>
+
+            <ConsultationModal
+              open={open}
+              setOpen={setOpen}
+              serviceOptions={serviceOptions}
+            />
+
             <Link to="/services">
               <Button variant="hero-outline" size="lg">
                 Explore Services

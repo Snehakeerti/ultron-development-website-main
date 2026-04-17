@@ -8,6 +8,7 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import StatsSection from "@/components/home/StatsSection";
 import Testimonials from "@/components/home/Testimonials";
 import AddOns from "@/components/home/AddOns";
+import Gallery from "@/components/home/Gallery";    
 import CTASection from "@/components/home/CTASection";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <WhyChooseUs />
         <StatsSection />
         <Testimonials />
+        <Gallery />
         <AddOns />
         <CTASection />
       </main>

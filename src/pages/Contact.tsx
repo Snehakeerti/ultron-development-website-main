@@ -252,25 +252,20 @@ const Contact = () => {
                   195, Dr Subbarayan St, Sivananda Colony, Tatabad, Gandhipuram, Coimbatore, Tamil Nadu 641012
                 </div>
 
-
                 <div className="flex gap-3">
                   <Phone />
-                  +91 9715097774
+                  +91 8438435588
                 </div>
-
 
                 <div className="flex gap-3">
                   <Mail />
-                  sale@ultroncomputer.com
+                  sale@ultroncomputer.com   
                 </div>
-
 
                 <div className="flex gap-3">
                   <Clock />
                   Mon–Sat 9:30 AM – 9 PM
                 </div>
-
-
 
                 {/* iframe map */}
                 <div className="rounded-xl overflow-hidden h-64">

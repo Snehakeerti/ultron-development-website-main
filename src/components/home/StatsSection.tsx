@@ -3,10 +3,10 @@ import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
 const stats = [
-  { icon: Monitor, value: 5000, suffix: "+", label: "Systems Repaired" },
+  { icon: Monitor, value: 120000, suffix: "+", label: "Systems Repaired" },
   { icon: Users, value: 10000, suffix: "+", label: "Happy Clients" },
   { icon: Award, value: 14, suffix: "+", label: "Years Experience" },
-  { icon: Headphones, value: 2000, suffix: "+", label: "Support Services Delivered" },
+  { icon: Headphones, value: 50, suffix: "+", label: "Certified Engineers" },
 ];
 
 const StatsSection = () => {

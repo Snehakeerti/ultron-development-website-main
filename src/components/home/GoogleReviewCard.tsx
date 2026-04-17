@@ -36,7 +36,7 @@ export default function GoogleReviewCard() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-1">
-                Based on 1741 reviews
+                Based on 1761 reviews
             </p>
 
             <a

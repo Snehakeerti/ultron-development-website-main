@@ -8,12 +8,16 @@ import { Server, Network, Shield, Monitor, Cpu, Wrench, ArrowRight, CheckCircle 
 import ConsultationModal from "../components/ConsultationModal";
 
 const serviceOptions = [
-  "Laptop Repair",
-  "Desktop Repair",
+  "Computer & Laptop Repair",
   "Motherboard Repair",
   "Data Recovery",
   "Chip Level Service",
-  "Others"
+  "AMC & Server Maintenance",
+  "Multi-Brand System Sales",
+  "Genuine Spare Parts",
+  "Virus Removal & Security",
+  "Performance & Optimization",
+  "Other",
 ];
 
 const services = [
@@ -111,10 +115,10 @@ const services = [
 ];
 
 const process = [
-  { step: "01", title: "Tell Us the Issue", desc: "Share your problem — our experts listen and suggest the best solution for your device." },
-  { step: "02", title: "Get a Quote", desc: "We identify the issue and provide a transparent, no-surprise repair cost estimate." },
-  { step: "03", title: "Book an Appointment", desc: "Visit us at Gandhipuram or schedule a pickup. We inspect and give an estimated delivery time." },
-  { step: "04", title: "Get It Resolved", desc: "Once fixed, you're notified immediately. We deliver on time — every time." },
+  { step: "01", title: "Tell Us the Issue", desc: "Explain the problem you're facing — our experts carefully understand your issue and guide you with the right solution." },
+  { step: "02", title: "We Diagonse", desc: "Our technicians thoroughly inspect your device to identify the exact problem and ensure nothing is missed." },
+  { step: "03", title: "Get a Quote", desc: "We provide a clear and transparent cost estimate along with the expected repair time — no hidden charges." },
+  { step: "04", title: "Get It Resolved", desc: "Once approved, we fix your device efficiently and notify you as soon as it’s ready for pickup or delivery." },
 ];
 
 const Services = () => {

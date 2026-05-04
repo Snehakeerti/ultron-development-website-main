@@ -7,12 +7,16 @@ import heroBg from "@/assets/hero-bg.jpg";
 import ConsultationModal from "../ConsultationModal";
 
 const serviceOptions = [
-  "Laptop Repair",
-  "Desktop Repair",
+  "Computer & Laptop Repair",
   "Motherboard Repair",
   "Data Recovery",
   "Chip Level Service",
-  "Others"
+  "AMC & Server Maintenance",
+  "Multi-Brand System Sales",
+  "Genuine Spare Parts",
+  "Virus Removal & Security",
+  "Performance & Optimization",
+  "Other",
 ];
 
 const HeroSection = () => {

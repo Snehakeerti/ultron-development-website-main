@@ -28,6 +28,9 @@ const GOOGLE_SCRIPT_URL =
 
 const serviceOptions = [
   "Computer & Laptop Repair",
+  "Motherboard Repair",
+  "Data Recovery",
+  "Chip Level Service",
   "AMC & Server Maintenance",
   "Multi-Brand System Sales",
   "Genuine Spare Parts",
@@ -37,10 +40,10 @@ const serviceOptions = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/ultroncomputers/", label: "Facebook" },
+  // { icon: Twitter, href: "#", label: "Twitter" },
+  // { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/laptop_service_center_cbe/", label: "Instagram" },
 ];
 
 const Contact = () => {

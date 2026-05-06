@@ -82,33 +82,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Timeline */}
-        <section className="section-padding bg-secondary/50">
-          <div className="container-custom">
-            <AnimatedSection className="text-center mb-14">
-              <h2 className="text-3xl font-bold text-foreground">Our Journey</h2>
-            </AnimatedSection>
-            <div className="max-w-3xl mx-auto space-y-8">
-              {timeline.map((item, i) => (
-                <AnimatedSection key={i} delay={i * 0.1}>
-                  <div className="flex gap-6 items-start">
-                    <div className="w-20 shrink-0 text-right">
-                      <span className="text-accent font-bold text-lg">{item.year}</span>
-                    </div>
-                    <div className="w-px bg-accent/30 shrink-0 relative">
-                      <div className="w-3 h-3 rounded-full bg-accent absolute -left-[5px] top-1" />
-                    </div>
-                    <div className="pb-4">
-                      <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
-                      <p className="text-muted-foreground text-sm">{item.desc}</p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Vision & Mission */}
          <section className="section-padding bg-background">
           <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-8">

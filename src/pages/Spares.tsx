@@ -8,6 +8,13 @@ import { HardDrive, Laptop, Cpu, ShoppingCart, Cpu as CpuIcon, MemoryStick, Moni
 import laptopDellLatitude5420 from "@/assets/laptop-dell-latitude-5420.jpg";
 import laptopDellLatitude5400 from "@/assets/dell-latitude-5400.jpeg";
 import laptopDellLatitude5410 from "@/assets/dell-latitude-5410-touch.jpg";
+import laptopDellLatitude5320 from "@/assets/dell-latitude-5320.jpeg";
+import laptopDellLatitude53201 from "@/assets/dell-latitude-5320-1.jpeg";
+import laptopDellLatitude53202 from "@/assets/dell-latitude-5320-2.jpeg";
+import laptopASUSM515D from "@/assets/asus-md-15d.jpeg";
+import laptopHPProbook640G5 from "@/assets/hp-probook-640-g5.jpeg";
+import laptopHPElite830G7 from "@/assets/Hp-Elitebook-830-g7.jpeg";
+import laptopDellLatitudeE7440 from "@/assets/dell-latitude-E7440.jpeg";
 
 const categories = ["All", "Used Laptops", "Storage", "Accessories"] as const;
 type Category = (typeof categories)[number];
@@ -59,6 +66,91 @@ const products: Product[] = [
     ],
     highlights: ["Quality tested", "Warranty included", "Ready to ship"],
   },
+  {
+    name: "Dell Latitude 5320",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopDellLatitude5320,
+    specs: [
+      { icon: CpuIcon, label: "Intel i7 -10th gen Processor" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB Nvme SSD" },
+      { icon: MonitorSmartphone, label: '13.3" LED FHD' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Dell Latitude 5320",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopDellLatitude53201,
+    specs: [
+      { icon: CpuIcon, label: "Intel i7 -11th gen Processor @2.60Ghz" },
+      { icon: MemoryStick, label: "16GB RAM • 256GB Nvme SSD" },
+      { icon: MonitorSmartphone, label: '13.3" LED FHD' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Dell Latitude 5320",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopDellLatitude53202,
+    specs: [
+      { icon: CpuIcon, label: "Intel i5 -11th gen Processor @2.60Ghz" },
+      { icon: MemoryStick, label: "16GB RAM • 256GB Nvme SSD" },
+      { icon: MonitorSmartphone, label: '13.3" LED FHD' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "ASUS M515D",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopASUSM515D,
+    specs: [
+      { icon: CpuIcon, label: "AMD Ryzen 3 3250U" },
+      { icon: MemoryStick, label: "8GB DDR4 RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '15.6"Inch LED FHD Display' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "HP PROBOOK 640 G5",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopHPProbook640G5,
+    specs: [
+      { icon: CpuIcon, label: "Intel i5 -8th Gen" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '14"Inch LED FHD Display' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "HP EliteBook 830 G7",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopHPElite830G7,
+    specs: [
+      { icon: CpuIcon, label: "i5- 10th Gen" },
+      { icon: MemoryStick, label: "8GB DDR4 RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '14"Inch LED FHD Display' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Dell Latitude E7440",
+    category: "Used Laptops",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopDellLatitudeE7440,
+    specs: [
+      { icon: CpuIcon, label: " Intel i5 -4th Gen Processor" },
+      { icon: MemoryStick, label: "8GB DDR4 RAM • 240GB SSD" },
+      { icon: MonitorSmartphone, label: '14" LED HD Display' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+
   // Storage
   { name: "NetApp FAS500f", category: "Storage", desc: "All-flash unified storage system for enterprise workloads." },
   { name: "Dell EMC Unity XT", category: "Storage", desc: "Midrange storage built for mixed workloads." },
@@ -114,11 +206,10 @@ const Spares = () => {
                 <button
                   key={cat}
                   onClick={() => setActive(cat)}
-                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                    active === cat
-                      ? "bg-accent text-accent-foreground shadow-md"
-                      : "bg-secondary text-muted-foreground hover:bg-secondary/80"
-                  }`}
+                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${active === cat
+                    ? "bg-accent text-accent-foreground shadow-md"
+                    : "bg-secondary text-muted-foreground hover:bg-secondary/80"
+                    }`}
                 >
                   {cat}
                 </button>

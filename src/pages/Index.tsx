@@ -18,7 +18,6 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        {/* <TrustBar /> */}
         <AboutPreview />
         <ServicesHighlight />
         <SparesPreview />

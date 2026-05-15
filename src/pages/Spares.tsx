@@ -326,7 +326,7 @@ const Spares = () => {
 
                 return (
                   <AnimatedSection
-                    key={product.name}
+                    key={`${product.name}-${i}`}
                     delay={i * 0.05}
                     className={isFeatured ? "" : ""}
                   >

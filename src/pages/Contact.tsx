@@ -23,8 +23,7 @@ import {
 
 import { useToast } from "@/hooks/use-toast";
 
-const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx0K5fDyJvN0SSdFtG9N3NBszUxVK0BkCadVWb6xwcWTHPCFsSi_SnhkaAELt2Con4RAA/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzPhR46qSQsOM1y8BSYJ3MbQi5-YPhwKMHzh6Z2VOWyJc357tuqT1YV0urUxDriiPmRhg/exec";
 
 const serviceOptions = [
   "Computer & Laptop Repair",
@@ -262,7 +261,7 @@ const Contact = () => {
 
                 <div className="flex gap-3">
                   <Mail />
-                  sale@ultroncomputer.com   
+                  info@ultroncomputer.com 
                 </div>
 
                 <div className="flex gap-3">
@@ -282,8 +281,6 @@ const Contact = () => {
                   />
 
                 </div>
-
-
 
                 {/* social */}
                 <div className="flex gap-3">

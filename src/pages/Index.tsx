@@ -4,6 +4,7 @@ import HeroSection from "@/components/home/HeroSection";
 import TrustBar from "@/components/home/TrustBar";
 import AboutPreview from "@/components/home/AboutPreview";
 import ServicesHighlight from "@/components/home/ServicesHighlight";
+import SparesPreview from "@/components/home/SparesPreview";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import StatsSection from "@/components/home/StatsSection";
 import Testimonials from "@/components/home/Testimonials";
@@ -20,6 +21,7 @@ const Index = () => {
         {/* <TrustBar /> */}
         <AboutPreview />
         <ServicesHighlight />
+        <SparesPreview />
         <WhyChooseUs />
         <StatsSection />
         <Testimonials />

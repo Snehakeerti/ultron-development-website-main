@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import ultronLogo from "@/assets/round-logo-bg-remove.png";
-
+import ultronLogo from "@/assets/ultron-white-logo.png";
 
 const Footer = () => {
   return (
@@ -15,12 +14,8 @@ const Footer = () => {
               <img
                 src={ultronLogo}
                 alt="best computer service center in coimbatore"
-                className="w-10 h-10 object-contain"
+                className="w-21 h-20 object-contain"
               />
-
-              <span className="text-xl font-bold">
-                Ultron Computers
-              </span>
 
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
@@ -73,7 +68,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-accent shrink-0" />
-                <span className="text-primary-foreground/60 text-sm">sale@ultroncomputer.com</span>
+                <span className="text-primary-foreground/60 text-sm">info@ultroncomputer.com</span>
               </li>
             </ul>
           </div>

@@ -15,8 +15,17 @@ import laptopASUSM515D from "@/assets/asus-md-15d.jpeg";
 import laptopHPProbook640G5 from "@/assets/hp-probook-640-g5.jpeg";
 import laptopHPElite830G7 from "@/assets/Hp-Elitebook-830-g7.jpeg";
 import laptopDellLatitudeE7440 from "@/assets/dell-latitude-E7440.jpeg";
+import laptopMacbookProA1708 from "@/assets/mac-book-pro-A1708.jpeg";
+import laptopMacbookProA17082 from "@/assets/mac-book-pro-A1708-2.jpeg";
+import laptopMacbookProA17083 from "@/assets/mac-book-pro-A1708-3.jpeg";
+import laptopMacbookProA17084 from "@/assets/mac-book-pro-A1708-4.jpeg";
+import laptopMacbookProA2159 from "@/assets/mac-book-pro-A2159.jpeg";
+import laptopMacbookProA1932 from "@/assets/mac-book-pro-A1932.jpeg";
+import laptopMacbookProA1989 from "@/assets/mac-book-pro-A1989.jpeg";
+import laptopMacbookProA2289 from "@/assets/mac-book-pro-A2289.jpeg";
 
-const categories = ["All", "Used Laptops", "Storage", "Accessories"] as const;
+
+const categories = ["All", "Used Laptops", "MacBook", "Accessories"] as const;
 type Category = (typeof categories)[number];
 
 interface Product {
@@ -151,11 +160,104 @@ const products: Product[] = [
     highlights: ["Quality tested", "Warranty included", "Ready to ship"],
   },
 
-  // Storage
-  { name: "NetApp FAS500f", category: "Storage", desc: "All-flash unified storage system for enterprise workloads." },
-  { name: "Dell EMC Unity XT", category: "Storage", desc: "Midrange storage built for mixed workloads." },
-  { name: "Seagate Exos X18", category: "Storage", desc: "18TB enterprise-grade hard drive for data centers." },
-  { name: "Samsung PM9A3 NVMe", category: "Storage", desc: "High-performance enterprise SSD for servers." },
+  // MacBook
+  {
+    name: "Mac Book Pro A1708",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA1708,
+    specs: [
+      { icon: CpuIcon, label: " i5" },
+      { icon: MemoryStick, label: "8GB RAM • 160GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Mac Book Pro A1708",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA17082,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Mac Book Pro A1708",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA17083,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Mac Book Pro A1708",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA17084,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "16GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Mac Book Pro A2159",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA2159,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  {
+    name: "Mac Book Pro A1932",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA1932,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3 inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+    {
+    name: "Mac Book Pro A1989",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA1989,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+    {
+    name: "Mac Book Pro A2289",
+    category: "MacBook",
+    desc: "Premium business-class laptop, fully tested and refurbished with warranty support.",
+    image: laptopMacbookProA2289,
+    specs: [
+      { icon: CpuIcon, label: "i5" },
+      { icon: MemoryStick, label: "8GB RAM • 256GB SSD" },
+      { icon: MonitorSmartphone, label: '13.3inch' },
+    ],
+    highlights: ["Quality tested", "Warranty included", "Ready to ship"],
+  },
+  
   // Accessories
   { name: "APC Smart-UPS 3000", category: "Accessories", desc: "Line-interactive UPS for network equipment." },
   { name: "Logitech MX Master 3S", category: "Accessories", desc: "Advanced wireless productivity mouse." },
@@ -164,9 +266,9 @@ const products: Product[] = [
 ];
 
 const categoryIcon: Record<Exclude<Category, "All">, typeof HardDrive> = {
-  Storage: HardDrive,
+  "MacBook": HardDrive,
   "Used Laptops": Laptop,
-  Accessories: Cpu,
+  "Accessories": Cpu,
 };
 
 const Spares = () => {

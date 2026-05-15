@@ -13,8 +13,7 @@ import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
 
-const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx0K5fDyJvN0SSdFtG9N3NBszUxVK0BkCadVWb6xwcWTHPCFsSi_SnhkaAELt2Con4RAA/exec";
+const GOOGLE_SCRIPT_URL ="https://script.google.com/macros/s/AKfycbzPhR46qSQsOM1y8BSYJ3MbQi5-YPhwKMHzh6Z2VOWyJc357tuqT1YV0urUxDriiPmRhg/exec";
 
 interface Props {
   open: boolean;

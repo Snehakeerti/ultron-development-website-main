@@ -55,8 +55,25 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
+            <h4 className="font-semibold text-lg mb-4">Our Branches</h4>
             <ul className="space-y-4">
+              <h5>Coimbatore</h5>
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="text-accent mt-0.5 shrink-0" />
+                <span className="text-primary-foreground/60 text-sm">
+                  195, Dr Subbarayan St, Sivananda Colony, Tatabad, Gandhipuram, Coimbatore, Tamil Nadu 641012 </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={18} className="text-accent shrink-0" />
+                <span className="text-primary-foreground/60 text-sm">+91 8438435588</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={18} className="text-accent shrink-0" />
+                <span className="text-primary-foreground/60 text-sm">info@ultroncomputer.com</span>
+              </li>
+            </ul>
+            <ul className="space-y-4 mt-4">
+              <h5>Tiruppur</h5>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-accent mt-0.5 shrink-0" />
                 <span className="text-primary-foreground/60 text-sm">

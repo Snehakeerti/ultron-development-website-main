@@ -251,7 +251,7 @@ const Contact = () => {
 
                 <div className="flex gap-3">
                   <MapPin />
-                  195, Dr Subbarayan St, Sivananda Colony, Tatabad, Gandhipuram, Coimbatore, Tamil Nadu 641012
+                  454, PN Rd, Ram Nagar, Tiruppur, Tamil Nadu 641602
                 </div>
 
                 <div className="flex gap-3">

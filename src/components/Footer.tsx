@@ -60,11 +60,11 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-accent mt-0.5 shrink-0" />
                 <span className="text-primary-foreground/60 text-sm">
-                  195, Dr Subbarayan St, Sivananda Colony, Tatabad, Gandhipuram, Coimbatore, Tamil Nadu 641012 </span>
+                  454, PN Rd, Ram Nagar, Tiruppur, Tamil Nadu 641602 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-accent shrink-0" />
-                <span className="text-primary-foreground/60 text-sm">+91 8438435588</span>
+                <span className="text-primary-foreground/60 text-sm">+91 9344017774</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-accent shrink-0" />
